@@ -22,16 +22,24 @@ install the required library
    - EXIT;
    
    edit the ejaberd config
-   - vi /opt/ejabberd/conf/ejabberd.yml
-   { 
-    // insert to eof
-    sql_type: mysql
-    sql_server: "localhost"
-    sql_database: "ejabberd"
-    sql_username: "ejabberd"
-    sql_password: "mypass"
+   - vi /opt/ejabberd/conf/ejabberd.yml  
+    // insert to eof  
+     sql_type: mysql   
+     sql_server: "localhost"  
+     sql_database: "ejabberd"  
+     sql_username: "ejabberd"  
+     sql_password: "mypass"  
+      
+    // add your hostname  
+    hosts:  
+       - "localhost"
+       - "myhostname.com"  
     
-    // 
-    }
+    acl -> "admin" -> "user"  
+       - "admin@myhostname.com"
+     
+    api_permissions -> "public commands" -> "who"
+       ip: 192.168.3.101/32
     
+    - :wq
     
