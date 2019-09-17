@@ -22,15 +22,17 @@ install the required library
    - EXIT;
    
    edit the ejaberd config
-   - vi /opt/ejabberd/conf/ejabberd.yml  
-    // insert to eof  
+   - vi /opt/ejabberd/conf/ejabberd.yml   
+      
+    // insert to eof
      sql_type: mysql   
      sql_server: "localhost"  
      sql_database: "ejabberd"  
      sql_username: "ejabberd"  
-     sql_password: "mypass"  
-      
+     sql_password: "mypass" 
+     
     // add your hostname  
+    
     hosts:  
        - "localhost"
        - "myhostname.com"  
@@ -43,3 +45,5 @@ install the required library
     
     - :wq
     
+    
+   
