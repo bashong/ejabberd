@@ -52,3 +52,7 @@ configure the firewall
 create admin 
 - export PATH=$PATH:/opt/ejabberd-19.08/bin/
 - ejabberdctl register admin myhostname.com U4J78dj9 
+
+
+access the url in browser client
+ - http://myhostname.com:5280/admin
