@@ -45,5 +45,10 @@ install the required library
     
     - :wq
     
-    
-   
+configure the firewall  
+ - firewall-cmd --permanent --add-port={5280,5222}/tcp
+ - firewall-cmd --reload
+
+create admin 
+- export PATH=$PATH:/opt/ejabberd-19.08/bin/
+- ejabberdctl register admin myhostname.com U4J78dj9 
