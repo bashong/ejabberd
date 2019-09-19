@@ -18,7 +18,7 @@ install the required library
    login to database as ejabberd user
    - mysql -u ejabberd -p
    - USE ejabberd;
-   - SOURCE /opt/ejabberd-19.05/lib/ejabberd-19.08/priv/sql/mysql.sql;
+   - SOURCE /opt/ejabberd-19.05/lib/ejabberd-19.08/priv/sql/mysql.new.sql;
    - EXIT;
    
    edit the ejaberd config
