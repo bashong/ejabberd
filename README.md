@@ -25,6 +25,7 @@ install the required library
    - vi /opt/ejabberd/conf/ejabberd.yml   
       
     // insert to eof
+     default_db: sql
      sql_type: mysql   
      sql_server: "localhost"  
      sql_database: "ejabberd"  
