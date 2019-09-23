@@ -30,8 +30,12 @@ install the required library
      sql_server: "localhost"  
      sql_database: "ejabberd"  
      sql_username: "ejabberd"  
-     sql_password: "mypass" 
+     sql_password: "mypass"  
      
+     host_config:
+        "myhostname.com":
+        auth_method: sql
+
     // add your hostname  
     
     hosts:  
